@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <style>
+    .swiper-container { width: 600px; height: 100px; overflow: hidden; }
+    .swiper-slide { background: red; margin-right: 10px; }
+    .swiper-wrapper { transition-timing-function: linear !important; }
+  </style>
+</head>
+<body>
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+  </div>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      freeMode: true,
+      speed: 3000,
+      autoplay: {
+        delay: 0,
+        pauseOnMouseEnter: true,
+      },
+    });
+  </script>
+</body>
+</html>
